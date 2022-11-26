@@ -24,11 +24,7 @@
                 Robotics Engineering program</a> at Worcester Polytechnic Institute (WPI),
                 currently interning at <a href="https://usa.honda-ri.com/">Honda Research Institute, US</a>.
               </p>
-              <!-- <p>Previously, I worked at <a href="https://www.skylarkdrones.com/about">Skylark Drones</a>, where I was
-                developing pipelines for solving computer vision problems associated with drone surveys. I was also the
-                primary backend developer for <a href="https://www.dronemissionops.com/">Drone Mission Ops</a>, the
-                proprietary software for managing commercial drone operations.
-              </p> -->
+              
               <p style="text-align:justify">
                 I obtained my Bachelors in Engineering from <a href="https://www.bits-pilani.ac.in/">Birla Institute of Technology & Science, Pilani</a> (India)
                 in 2019, where I worked on various projects under <a href="https://www.bits-pilani.ac.in/pilani/rout/Profile">Prof. B. K. Rout</a> as part of the robotics lab, 
@@ -70,8 +66,7 @@
             <td style="padding:20px;width:75%;vertical-align:top">
               <strong>Social Dynamics in Human-Human-Robot Interaction</strong>
               <br>
-              <p>Developing & implementing algorithms that use the estimated individual and group states for human model understanding</p>
-              <!-- <p>Achieved 86% accuracy in estimating crop count for a farm using machine learning techniques(SVM, CNNs)</p> -->
+              <p  style="text-align:justify">Developing & implementing algorithms that use the estimated individual and group states for human model understanding</p>
               
             </td>
           </tr>
@@ -87,9 +82,9 @@
             <td style="padding:20px;width:75%;vertical-align:top">
               <strong>Design Engineer</strong>
               <br>
-              <p>Worked closely with American and European markets, designed sheet metal parts, oil lines & hoses for autonomous sprayers & tractors
+              <p style="text-align:justify">Worked closely with American and European markets, designed sheet metal parts, oil lines & hoses for autonomous sprayers & tractors
                 </p>
-              <p>Created a CREO program using C++ to create 32 rear-wheel configurations, reducing design time by around <emph>20x</emph></p>
+              <p style="text-align:justify">Created a CREO program using C++ to create 32 rear-wheel configurations, reducing design time from 30 days to <emph>3 hours</emph></p>
               
         </tbody></table>
 
@@ -119,7 +114,7 @@
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
-            <papertitle>Graduate Research Assistant at Manipulation & Environmental Robotics Lab, WPI (Jan - May 2022)</papertitle>
+            <papertitle  style="text-align:justify">Graduate Research Assistant at Manipulation & Environmental Robotics Lab, WPI (Jan - May 2022)</papertitle>
             
             <p style="text-align:justify">Defined a planner for a 3D In-Hand Manipulation
               Platform on External Surfaces using A* algorithm with Geodesic and Euclidean distances as heuristic</p>
@@ -128,54 +123,50 @@
       </tbody></table>
 
 
-
-
-
+        <!-- Projects -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Relevant Projects</heading>
-              <!-- <p>
-                Projects with publications are <span class="highlight">highlighted</span>.
-              </p> -->
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <!-- Zhang's Camera Calibration -->
+          <!-- MultiNet-2: Joint Semantic, Depth, & Normal Estimation -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <img src='media/checkerboard.jpg' width="160">
+                <img src='media/Multitask.jpg' width="160">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle>Zhang's camera calibration</papertitle>
+              <papertitle>MultiNet-2: Joint Semantic, Depth, & Normal Estimation</papertitle>
               <br>
-              <a href="https://github.com/kgnandanwar/rbe549-auto-calib">project page</a>
-              <p>Implemented camera calibration method as presented by Zhengyou Zhang in his 1998 paper from Microsoft</p>
-              <p>Used eigen decomposition for solving homogenous system of linear equations & MLE for optimization of calibration parameters</p>
-              <p>The mean re-projection error post optimization was close to 0.5 pixels</p>
+              <a href="https://github.com/kgnandanwar/MultiNet2-A-Multitask_leraning-architecture">project page</a>
+              <p style="text-align:justify">Developed unified encoder-decoder architecure using PyTorch to perform depth & surface estimation with semantic segmentation</p>
+              <p style="text-align:justify">Performed experiments using VGG16 & ResNet versions as encoders with VGG16 offering good trade-off between peformance & speed</p>
             </td>
 
-          <!-- Face swapping -->
+          <!-- Vehicle Detection -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <img src='media/result_del_tri2.gif' width="160">
+                <img src='media/hog.png' width="160">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle>Swap faces in a video using CV and deep learning approaches</papertitle>
+              <papertitle>Vehicle Detection using CV and deep learning approaches</papertitle>
               <br>
-              <a href="https://github.com/saikrn112/face-swap-rbe549">project page</a>
-              <p>Used Delaunay triangulation and Thin plate splines based warping to swap two faces in a video.</p>
-              <p>Blended the faces using Poisson blending</p>
-              <p>(Collaborative work)</p>
+              <!-- <a href="https://github.com/saikrn112/face-swap-rbe549">project page</a> -->
+              <p style="text-align:justify">Performed HOG feature extraction on labeled training image set, trained Linear SVM classifier, implemented sliding-window technique, created heatmap to follow detected vehicles and estimated bounding box on detetcted vehicles
+              </p>
+              <p>Compared results with Yolo </p> 
+              <p>Used max IoU & least false positives as comapring parameters</p>
+              <!-- <p>(Collaborative work)</p> -->
             </td>
 
-          <!-- Panorama stitching -->
+          <!-- Panorama stitching
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
@@ -191,9 +182,9 @@
               <p>Also, trained HomographyNet, a CNN based supervised learning architecture for homography estimation using synthetically generated data.
               </p>
               <p>(Collaborative work)</p>
-            </td>
+            </td> -->
 
-          <!-- Probability based edge detection-->
+          <!-- Probability based edge detection
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
@@ -206,20 +197,20 @@
               <a href="https://github.com/kgnandanwar/rbe549-alohomora">project page</a>
               <p>Developed a simplified version of pb, which finds boundaries by examining texture and color discontinuities in addition to intensity discontinuities across multiple scales.</p>
               <p>Outperforms Canny and Sobel by suppressing the false positives produced by classical methods in textured regions.</p>
-            </td>
+            </td> -->
 
 
-          <!-- Pose estimation of a mobile robot-->
+          <!-- Sports Celebrity Image Classification-->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <img src='media/pose_estm.gif' width="160">
+                <img src='media/wavelet.png' width="80">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle>Pose estimation of a mobile robot</papertitle>
+              <papertitle>Sports Celebrity Image Classification</papertitle>
               <br>
-              <a href="https://drive.google.com/file/d/1lqBneVtAyftOY26LdE43fNdpQ4PZhpsA/view">project video</a>
+              <!-- <a href="https://drive.google.com/file/d/1lqBneVtAyftOY26LdE43fNdpQ4PZhpsA/view">project video</a> -->
               <!-- <a href="https://phogzone.com/">Peter Hedman</a>,
               <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
               <a href="https://bmild.github.io/">Ben Mildenhall</a>,
@@ -235,10 +226,9 @@
               <!-- <a href="https://kenembanisi.github.io/">arXiv</a>
               / -->
               <!-- <a href="https://kenembanisi.github.io/">project page</a> -->
-              <p>Carried out calibration for camera intrinsics of an autonomous mobile robot.</p>
-              <p>Estimated pose of the robot using differential-RGB color-space, image processing tools,
-                and the perspective-n-point algorithm from the OpenCV library.
-              <p>Accuracy was within +/-5 cm.</p>
+              <p style="text-align:justify">Created end to end pipeline, used Opencv library for face & eyes detection and wavelet transforms for feature engineering</p>
+              <p style="text-align:justify">Built model using SVM, logistic regression & random forest, fine-tuned model using gridsearchcv
+              <p style="text-align:justify">F Score: SVM: 84.12%, Random Forest: 70.6%, Logistic regression: 80.95%</p>
             </td>
 
           <!-- Kinematic planning under non-holonomic constraints-->
@@ -251,9 +241,9 @@
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle>Kinematic planning under non-holonomic constraints</papertitle>
               <br>
-              <a href="https://github.com/kgnandanwar/rbe550-valet">project page</a>
-              <p>Developed a kinematic path planner with non-holonomic constraints to efficiently park vehicles ranging
-                from a differential drive bot to a car to a truck with a trailer.</p>
+              <!-- <a href="https://github.com/kgnandanwar/rbe550-valet">project page</a> -->
+              <p style="text-align:justify">Developed a kinematic path planner with non-holonomic constraints to efficiently park vehicles ranging
+                from a differential drive bot to a car to a truck with a trailer</p>
             </td>
 
           
@@ -261,14 +251,14 @@
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <img src='media/a-star.gif' width="160">
+                <img src='media/DFS_70.png' width="160">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle>Graph search algorithms: BFS, DFS, Dijkstra's, A*</papertitle>
               <br>
-              <a href="https://github.com/kgnandanwar/RBE550-Motion-planning">project page</a>
-              <p>Implemented planning algorithms- BFS, DFS, Dijkstra’s, & A* on a grid world setup of configurable obstacle density.</p>
+              <!-- <a href="https://github.com/kgnandanwar/RBE550-Motion-planning">project page</a> -->
+              <p style="text-align:justify">Implemented planning algorithms- BFS, DFS, Dijkstra’s, & A* on a grid world setup of configurable obstacle density</p>
             </td>
 
 <!--          &lt;!&ndash; Autonomous mobile robot for library maintenance    &ndash;&gt;-->
@@ -296,8 +286,8 @@
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle>Deep q-learning to play breakout</papertitle>
               <br>
-              <a href="https://github.com/kgnandanwar/ds595-rl">project page</a>
-              <p>Implemented a Deep QLearning Network(DQN) to play Breakout for an averaging reward over 70 points in 100 episodes.</p>
+              <!-- <a href="https://github.com/kgnandanwar/ds595-rl">project page</a> -->
+              <p style="text-align:justify">Implemented a Deep QLearning Network(DQN) to play Breakout for an averaging reward over 70 points in 100 episodes.</p>
             </td>
 
           <!-- Comparison of reinforcement learning techniques on Super Mario Bros.
@@ -331,7 +321,7 @@
               <p></p>
               <p>Used ROS’ client-service, publisher-subscriber frameworks for PID control of robot manipulator end-effector pose.</p>
               <p>(Collaborative work)</p>
-            </td> --> -->
+            </td> -->
 
 
           <!-- <tr>
@@ -388,7 +378,7 @@
             <strong>Kunal Nandanwar</strong>,  
              Anubha Pant
             <br>
-            <em>Submitted Aug 06, 2020. (Under review with John Deere)</em>
+            <em>Submitted Aug 06, 2020. (Under review with John Deere IP team)</em>
             <br>
             <!-- <a href="https://link.springer.com/chapter/10.1007/978-981-13-8618-3_83">Springer</a>
             <p style="text-align:justify">This work proposes a lab prototype of a PID control tuned, self-balancing bike that can be further extended to autonomous bike with path and obstacle detection to travel using global positioning system.</p> -->
@@ -470,6 +460,42 @@
           </td>
 
       </tbody></table>
+
+      <!-- Others -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <heading>Other Activities</heading>
+          <!-- <p>
+            Projects with publications are <span class="highlight">highlighted</span>.
+          </p> -->
+        </td>
+      </tr>
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <!-- Team Garuda-->
+      <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+        <td style="padding:20px;width:25%;vertical-align:top">
+          <div class="one">
+            <!-- <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="media/nerfbake_15.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div> -->
+            <img src='media/druta.jpg' width="160">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:top">
+          <papertitle>Team Garuda</papertitle>
+          
+          <p style="text-align:justify">Designed a Group 3 size unmanned Vertical Take-Off and Landing(VTOL) Aircraft that achieves high-speed forward flight (relative to current VTOL aircraft) and efficient hover through the use of novel reconfigurable propulsive and lifting devices for mega-city type environments</p>
+          <p style="text-align:justify">Participated in the <a href="https://vtol.org/awards-and-contests/student-design-competition/past-student-design-winners">American Helicopter Society 35th International Student Design Competition (2018)</a> and was the only Indian team to win this competition since 2011 in the undergraduate category, that too in its first attempt</p>
+          <a href="https://sites.google.com/view/team-garuda/">Team Website</a>, <a href="https://sites.google.com/view/team-garuda/achievements/media-coverage">Media Coverage</a>
+        
+        </td>
+
+    </tbody></table>
+
 
         <!-- Teaching Experience -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
