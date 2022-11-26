@@ -1,2 +1,1 @@
-This repository contains link to my personal website. 
-kgnandanwar.github.io
+This repository contains link to my personal website. https://kgnandanwar.github.io
