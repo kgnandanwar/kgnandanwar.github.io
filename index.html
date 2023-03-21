@@ -262,6 +262,21 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <!-- Visual Odometry -->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='media/vo.png' width="160" height="130">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <papertitle>Visual Odometry for Localization in Autonomous Driving</papertitle>
+              <br>
+              <a href="https://github.com/kgnandanwar/Visual-Odometry-using-stereo-camera">project page</a>
+              <p style="text-align:justify">Extracted features from images using vehicle’s camera setup to find matches, implemented match filtering by thresholding distance</p>
+              <p style="text-align:justify">Estimated the camera motion between subsequent photographs using PnP & Essential Matrix Decomposition to build trajectory</p>
+            </td>
+
 
           <!-- 3D Reconstruction -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
