@@ -8,6 +8,12 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/jpg" href="media/kunal.png">
+  <style>
+    .image-row {
+        display: flex; /* Use flexbox to create a row */
+        justify-content: space-between; /* Space images evenly */
+    }
+</style>
 </head>
 
 <body>
@@ -27,11 +33,7 @@
               </p>
 
               <p style="text-align:justify">My research interest lies within the areas of Deep Learning & Computer Vision.</p>
-                
-              <p style="text-align:justify">  
-                Previously, I worked at <a href="https://wp.wpi.edu/merlab/">Manipulation & Environmental Robotics Lab</a>.
-                Currently I am working as a research assistant at Worcester Polytechnic Institute on an NSF-Funded Project</a>.
-              </p>
+          
 
               <p style="text-align:justify">I am looking for full-time opportunities. Feel free to check out my github for the projects.
               </p>
@@ -44,34 +46,114 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="media/kunal.png"><img style="width:110%;max-width:110%" alt="profile photo" src="media/kunal.png" class="hoverZoomLink"></a>
+              <a href="media/kunal.png"><img style="width:90%;max-width:90%" alt="profile photo" src="media/kunal.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
-                
+
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<!-- Sections -->
+<table id="ra" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <h1 style="text-align:left">Sections</h1>
+
+        <ul style="list-style-type: disc; padding: 20px 0 0 20px 0; margin: 0;">
+          <li><a href="#topics-of-interest">Skills & Interests</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#ra">Research Assistant</a></li>
+          <li><a href="#projects">Relevant Projects</a></li>
+          <li><a href="#id">Innovation Disclosures & Patents</a></li>
+          <li><a href="#conf">Conferences & Proceedings</a></li>
+          <li><a href="#aa">Activities & Achievements</a></li>
+          <li><a href="#ta">Teaching Experiences</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+        
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+				 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- Topics of Interest -->
+            <table id="topics-of-interest" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h1>Skills & Interests</h1>
+              <p>
+                 Perception, Computer Vision, Sensor Fusion, Deep Learning, SLAM, NeRF, Depth and Pose Estimation
+              </p>
+              <div class="row">
+                <div class="column">
+                  <header class="major">
+                <h2>Programming</2>
+                </header>
+                <p>
+                  Python, C++, C, MATLAB, Docker, Linux, Bash, Git, Colab, Jupyter
+                </p>
+                </div>
+                <div class="column">
+                  <header class="major">
+                <h2>Deep Learning Frameworks:</h2>
+                </header>
+                <p>
+                  PyTorch, TensorFlow, Keras, CUDA
+                  
+                </p>
+                </div>
+                <div class="column">
+                  <header class="major">
+                <h2>Robotics</h2>
+                </header>
+                <p>
+                  Gazebo, ROS, ROS2, OpenAI Gym, OpenCV, PCL              
+                   
+                </p>
+                </div>		
+                <div class="column">
+                  <header class="major">
+                <h2>Hardware: </h2>
+                </header>
+                <p>
+                  Intel RealSense depth camera D435i, ZED2 Camera, Nvidia Jetson Nano, Arduino, Nvidia Jetson Orin Nano            
+                   
+                </p>
+                </div>		
+            </td>
+          </tr>
+        </tbody></table>
+        
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
         
         <!-- <heading>Work Experience</heading> -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="work-experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h1 style="text-align:center"><u>Work Experience</u></h1>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+              <h1 style="text-align:left">Work Experience</h1>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <!-- FieldAI -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
+            <td style="padding:20px;width:25%;vertical-align:top;" >
               <div class="one">
-                <a href="https://fieldai.com/"><img src='media/fieldai.jfif' width="160"></a>
+                <a href="https://fieldai.com/"><img src='media/fieldai.jfif' width="120"></a>
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top;text-align:justify">
+            <td style="padding:20px;width:50%;vertical-align:top;text-align:justify">
               <strong>Autonomy: Computer Vision</strong>
               <br>
-            <em>July 2023 - Present</em>
+            <em>July 2023 - August 2023</em>
               <p  style="text-align:justify">Optimal scan positioning for an automated scanning process with an autonomous robot platform</p>
               
             </td>
@@ -82,7 +164,7 @@
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <a href="https://vecros.com/"><img src='media/vecros.jpg' width="160"></a>
+                <a href="https://vecros.com/"><img src='media/vecros.jpg' width="120"></a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top;text-align:justify">
@@ -96,10 +178,10 @@
 
           
           <!-- HRI -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <a href="https://usa.honda-ri.com/"><img src='media/hri.jfif' width="160"></a>
+                <a href="https://usa.honda-ri.com/"><img src='media/hri.jfif' width="120"></a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top;text-align:justify">
@@ -115,7 +197,7 @@
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <a href="https://braincorp.com/"><img src='media/bc.png' width="160"></a>
+                <a href="https://braincorp.com/"><img src='media/bc.png' width="120"></a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
@@ -129,10 +211,10 @@
 
 
           <!-- John Deere -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
-                <a href="https://www.deere.com/en/"><img src='media/jd.png' width="160"></a>
+                <a href="https://www.deere.com/en/"><img src='media/jd.png' width="120"></a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
@@ -144,19 +226,22 @@
               
         </tbody></table>
 
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
 
         <!-- Research Assistant -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="ra" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <h1 style="text-align:center"><u>Research Assistant</u></h1>
+            <h1 style="text-align:left">Research Assistant</h1>
           </td>
         </tr>
       </tbody></table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <!-- Bird Indentification-->
-        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+        <!-- Bird Identification-->
+        <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <a href="https://wp.wpi.edu/rosehub/"><img src='media/rosehub.jpg' width="180" height="130"></a>
@@ -190,7 +275,7 @@
           </td>
 
           <!-- HOB-->
-        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <a href="https://www.bits-pilani.ac.in/pilani/centreforrobotics/CRIS"><img src='media/BITS_Pilani-Logo.svg' width="160"></a>
@@ -224,19 +309,22 @@
 
       </tbody></table>
 
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
 
         <!-- Projects -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <h1 style="text-align:center"><u>Relevant Projects</u></h1>
+              <h1 style="text-align:left">Relevant Projects</h1>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <!-- NERF -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <img src='media/nerf.gif' width="160" height="130">
@@ -264,7 +352,7 @@
             </td>
 
           <!-- Object Segmentation for Manipulation -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <img src='media/pcd.png' width="160" height="130">
@@ -295,7 +383,7 @@
 
 
           <!-- 3D Reconstruction -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <img src='media/3d_reconstruction.png' width="160" height="130">
@@ -324,7 +412,7 @@
             </td>
 
             <!-- Zhang Camera Calib -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <img src='media/calib.jpg' width="160" height="160">
@@ -356,7 +444,7 @@
             </td>
 
           <!-- Panorama stitching by projecting images onto a cylindrical surface -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <img src='media/Stitched_Panorama.png' width="160">
@@ -465,12 +553,15 @@
 
         </tbody></table>
 
-
-        <!-- Innovation DIsclosures & Publications -->
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+        <!-- Innovation Disclosures & Patents -->
+        <table id="id" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <h1 style="text-align:center"><u>Innovation Disclosures & Publications</u></h1>
+            <h1 style="text-align:left">Innovation Disclosures & Patents</h1>
           </td>
         </tr>
       </tbody></table>
@@ -480,7 +571,7 @@
         <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
-              <img src='media/id.png' width="160" >
+              <img src='media/id1.png' width="160" >
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:top">
@@ -490,11 +581,33 @@
             <a href="https://www.linkedin.com/in/hifza-javed/">Hifza Javed</a>,  
             <a href="https://www.linkedin.com/in/nawidj/">Nawid Jamali</a>
             <br>
-            <em>Patent draft submitted: Jan 13, 2023. (Under review with HRI IP team)</em>
+            <em>(Submitted; with USPTO)</em>
             <br>
           </td>
+
+          <!-- HRI ID
+<tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+  <td style="padding:0px;width:25%;vertical-align:top; padding-top: 10px; padding-bottom: 10px;">
+    <div class="one">
+      <img src='media/id1.png' width="160" >
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:top">
+    <papertitle>SYSTEM & METHOD FOR COMPLETING THREE DIMENSIONAL FACE RECONSTRUCTION</papertitle>
+    <br>
+    <strong>Kunal Nandanwar</strong>, 
+    <a href="https://www.linkedin.com/in/hifza-javed/">Hifza Javed</a>,  
+    <a href="https://www.linkedin.com/in/nawidj/">Nawid Jamali</a>
+    <br>
+    <em>(Submitted; with USPTO)</em>
+    <br>
+  </td>
+</tr> -->
+
+
         
-        <!-- John Deere ID-->
+        
+        <!-- John Deere ID
         <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
@@ -509,10 +622,27 @@
             <br>
             <em>Patent draft submitted: Aug 06, 2020. (Under review with John Deere IP team)</em>
             <br>
+          </td> -->
+
+        </tbody></table>
+
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      
+
+          <!-- Conferences and Publications -->
+        <table id="conf" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h1 style="text-align:left">Conferences & Proceedings</h1>
           </td>
-        
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
         <!-- Self Balancing of Bike-->
-        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+        <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <img src='media/springer.jpeg' width="160">
@@ -556,7 +686,7 @@
 
 
           <!-- Absorbent Hygiene Waste -->
-        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <img src='media/springer.jpeg' width="160">
@@ -604,18 +734,21 @@
 
       </tbody></table>
 
-      <!-- Others -->
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <!-- Achievements -->
+      <table id="aa" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-          <h1 style="text-align:center"><u>Other Activities</u></h1>
+          <h1 style="text-align:left">Activities & Achievements</h1>
         </td>
       </tr>
     </tbody></table>
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       <!-- Team Garuda-->
-      <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+      <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
         <td style="padding:20px;width:25%;vertical-align:top">
           <div class="one">
             <img src='media/druta.jpg' width="160">
@@ -624,7 +757,7 @@
         <td style="padding:20px;width:75%;vertical-align:top">
           <papertitle><a href="https://sites.google.com/view/team-garuda/">Team Garuda</a>, BITS Pilani</papertitle>
           
-          <p style="text-align:justify">Designed a Group 3 size unmanned Vertical Take-Off and Landing(VTOL) Aircraft that achieves high-speed forward flight (relative to current VTOL aircraft) and efficient hover through the use of novel reconfigurable propulsive and lifting devices for mega-city type environments</p>
+          <p style="text-align:justify">Developed a Group 3 size unmanned Vertical Take-Off and Landing(VTOL) Aircraft that achieves high-speed forward flight (relative to current VTOL aircraft) and efficient hover through the use of novel reconfigurable propulsive and lifting devices for mega-city type environments</p>
           <p style="text-align:justify">Participated in the <a href="https://vtol.org/awards-and-contests/student-design-competition">American Helicopter Society 35th International Student Design Competition (2018)</a> and was the only Indian team to win this competition since 2011 in the undergraduate category, that too in its first attempt</p>
           <a href="https://vtol.org/files/dmfile/u3_druta_bits_pilantiindia_execsummary_new-entry_2018.pdf">Executive Summary</a><br>
           <a href="https://sites.google.com/view/team-garuda/achievements/media-coverage">Media Coverage</a>
@@ -633,12 +766,15 @@
 
     </tbody></table>
 
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
 
         <!-- Teaching Experience -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="ta" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <h1 style="text-align:center"><u>Teaching Experiences</u></h1>
+            <h1 style="text-align:left">Teaching Experiences</h1>
           </td>
         </tr>
       </tbody></table>
@@ -666,7 +802,8 @@
             </p>
           </td>
 
-          
+        </tbody></table>
+      </td>
       
         <!-- Footnote -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -676,7 +813,7 @@
               <p style="text-align:right;font-size:10px;"> Page visitor counter:
                 <a href="https://www.hitwebcounter.com" target="_blank"></a>
                   <img src="https://hitwebcounter.com/counter/counter.php?page=8078126&style=0007&nbdigits=4&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a></p>
-              <p  style="text-align:right;font-size:10px;">Website last updated: July 01, 2023</p>
+              <p  style="text-align:right;font-size:10px;">Last updated: Nov 21, 2023</p>
               <p style="text-align:right;font-size:8px;">
                 <a href="https://jonbarron.info/">Template Credits</a></p>
             </td>
