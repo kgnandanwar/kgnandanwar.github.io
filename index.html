@@ -8,11 +8,41 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/jpg" href="media/kunal.png">
-  <style>
+  <!-- <style>
     .image-row {
         display: flex; /* Use flexbox to create a row */
         justify-content: space-between; /* Space images evenly */
     }
+</style> -->
+<style>
+    #work-experience {
+      display: flex;
+      justify-content: center;
+      align-items: center;      /* ← add this */
+      overflow: hidden;
+      /* position: relative; */
+      width: 100%;
+      padding: 1em 0;
+      background: #fff;
+    }
+    .logo-track {
+      display: flex;
+      width: max-content;
+      align-items: center;
+      /* animation: scroll 20s linear infinite; */
+    }
+    .logo-track img {
+      flex: 0 0 auto;
+      height: 70px;  
+      width: 120px;
+      margin: 0 1em;
+      object-fit: contain;
+    }
+    @keyframes scroll {
+      from   { transform: translateX(0); }
+      to     { transform: translateX(-50%); }
+    }
+  /* ───────────────────────────────────────────────────────────────────── */
 </style>
 </head>
 
@@ -27,14 +57,14 @@
                 <name><b>Kunal Nandanwar</b></name>
               </p>
               <td style="padding: 0 7% 0 2.5%;width:60%;vertical-align:middle">
-              <p style="text-align:justify">I completed my MS in Robotics from Worcester Polytechnic Institute (WPI) in May 2023<a href="https://www.wpi.edu/academics/departments/robotics-engineering"></a>. </p> 
+              <p style="text-align:justify">I completed my MS in Robotics from <a href="https://www.wpi.edu/academics/departments/robotics-engineering">Worcester Polytechnic Institute</a> in May 2023. </p> 
               <p style="text-align:justify">
                 I received my undergraduate degree from <a href="https://www.bits-pilani.ac.in/">Birla Institute of Technology & Science, Pilani</a> (India), 
                 where I worked with <a href="https://www.bits-pilani.ac.in/pilani/rout/Profile">Prof. B. K. Rout</a> at 
                 <a href="https://www.bits-pilani.ac.in/pilani/centreforrobotics/CRIS">The Centre for Robotics & Intelligent Systems(CRIS)</a>. 
               </p>
 
-              <p style="text-align:justify">My research interest lies within the areas of Deep Learning & Computer Vision.</p>
+              <p style="text-align:justify">My research interest lies within the areas of DL/Computer Vision/Perception.</p>
             </td>
             <td style="padding:0 2.5% 0 2.5%;width:23%;max-width:23%">
               <a href="media/kunal.png"><img style="width:90%;max-width:90%" alt="profile photo" src="media/kunal.png" class="hoverZoomLink"></a>
@@ -44,96 +74,59 @@
 
                 <p style="text-align:center">
                   <a href="mailto:kgnandanwar@wpi.edu">Email</a> &nbsp/&nbsp
-                  <a href="media/resume.pdf">CV</a> &nbsp/&nbsp
+                  <!-- <a href="media/resume.pdf">CV</a> &nbsp/&nbsp -->
                   <a href="https://www.linkedin.com/in/kgnandanwar/">LinkedIn</a> &nbsp/&nbsp
                   <a href="https://github.com/kgnandanwar/">Github</a> &nbsp/&nbsp
                   <a href="https://scholar.google.com/citations?user=okAEDBAAAAAJ&hl=en&oi=ao">Google Scholar</a>
                 </p>
 
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-<!-- Sections -->
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr>
-      <td style="padding:10px;width:100%;vertical-align:middle">
-        <h1 style="text-align:left">Sections</h1>
-
-        <ul style="list-style-type: disc; padding: 0px 0 0 20px; margin: 0;">
-          <li><a href="#topics-of-interest">Skills & Interests</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#ra">Research Assistant</a></li>
-          <li><a href="#projects">Relevant Projects</a></li>
-          <li><a href="#id">Innovation Disclosures & Patents</a></li>
-          <li><a href="#conf">Conferences & Proceedings</a></li>
-          <li><a href="#aa">Activities & Achievements</a></li>
-          <li><a href="#ta">Teaching Experiences</a></li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-        
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-				 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-          <!-- Topics of Interest -->
-            <table id="topics-of-interest" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-            <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-              <h1>Skills & Interests</h1>
-              <p>
-                 Perception, Computer Vision, Sensor Fusion, Deep Learning, SLAM, NeRF, Depth and Pose Estimation
-              </p>
-              <div class="row">
-                <div class="column">
-                  <header class="major">
-                <h2>Programming</2>
-                </header>
-                <p>
-                  Python, C++, C, MATLAB, Docker, Linux, Bash, Git, Colab, Jupyter
-                </p>
-                </div>
-                <div class="column">
-                  <header class="major">
-                <h2>Deep Learning Frameworks:</h2>
-                </header>
-                <p>
-                  PyTorch, TensorFlow, Keras, CUDA
-                  
-                </p>
-                </div>
-                <div class="column">
-                  <header class="major">
-                <h2>Robotics</h2>
-                </header>
-                <p>
-                  Gazebo, ROS, ROS2, OpenAI Gym, OpenCV, PCL              
-                   
-                </p>
-                </div>		
-                <div class="column">
-                  <header class="major">
-                <h2>Hardware </h2>
-                </header>
-                <p>
-                  Intel RealSense depth camera D435i, ZED2 Camera, Nvidia Jetson Nano, Arduino, Nvidia Jetson Orin Nano            
-                   
-                </p>
-                </div>		
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>        
         
         
-        <!-- <heading>Work Experience</heading> -->
+
+          <!-- ─── Work Experience (auto-scrolling logos) ─────────────────────────── -->
+        <table id="ra" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:10px;width:100%;vertical-align:middle">
+            <h1 style="text-align:left">Work Experience</h1>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:2px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <section id="work-experience">
+          <div class="logo-track">
+            <!-- first sequence -->
+            <a href="https://www.agtonomy.com/">
+              <img src="media/Agtonomy_Logo.jpg" alt="Agtonomy Logo">
+            </a>
+            <a href="https://fieldai.com/">
+              <img src="media/fieldai.jfif" alt="FieldAI Logo">
+            </a>
+            <a href="https://vecros.com/">
+              <img src="media/vecros.jpg" alt="Vecros Logo">
+            </a>
+            <a href="https://usa.honda-ri.com/">
+              <img src="media/hri.jfif" alt="Honda R&I Logo">
+            </a>
+            <a href="https://braincorp.com/">
+              <img src="media/bc.png" alt="Brain Corp Logo">
+            </a>
+            <a href="https://www.deere.com/en/">
+              <img src="media/jd.png" alt="John Deere Logo">
+            </a>
+            <a href="https://altair.com/">
+              <img src="media/altair.jpg" alt="Altair Logo">
+            </a>
+            <a href="https://hal-india.co.in//">
+              <img src="media/hal.avif" alt="HAL Logo">
+            </a>
+        
+          </div>
+        </section>
+        
+
+        <!-- <heading>Work Experience</heading>
         <table id="work-experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:10px;width:100%;vertical-align:middle">
@@ -141,10 +134,10 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
 
           <!-- FieldAI -->
-          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
+          <!-- <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top;" >
               <div class="one">
                 <a href="https://fieldai.com/"><img src='media/fieldai.jfif' width="140"></a>
@@ -157,11 +150,11 @@
               <p  style="text-align:justify">Optimal scan positioning for an automated scanning process with an autonomous robot platform</p>
               
             </td>
-          </tr>
+          </tr> -->
           
 
           <!-- Vecros -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <!-- <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
               <div class="one">
                 <a href="https://vecros.com/"><img src='media/vecros.jpg' width="140"></a>
@@ -174,11 +167,11 @@
               <p  style="text-align:justify">Explored state-of-the-art techniques in computer vision & deep learning for navigation of aerial robot Athera</p>
               
             </td>
-          </tr>
+          </tr> -->
 
           
           <!-- HRI -->
-          <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
+          <!-- <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
               <div class="one">
                 <a href="https://usa.honda-ri.com/"><img src='media/hri.jfif' width="140"></a>
@@ -191,9 +184,9 @@
               <p  style="text-align:justify">Estimated individual states for human model understanding</p>
               
             </td>
-          </tr>
+          </tr> -->
 
-          <!-- !-- Brain Corp --> 
+          <!-- !-- Brain Corp 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
               <div class="one">
@@ -207,10 +200,10 @@
               <p  style="text-align:justify">Worked on the autonomous warehouse robots </p>
               
             </td>
-          </tr>
+          </tr> -->
 
 
-          <!-- John Deere -->
+          <!-- John Deere
           <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
               <div class="one">
@@ -224,7 +217,7 @@
               <p style="text-align:justify">Worked closely with autonomous sprayers & tractors for American and European markets
                 </p>
               
-        </tbody></table>
+        </tbody></table>-->
 
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -252,7 +245,7 @@
             <br>
             <em>Sept 2023 - Present</em><br>
             <a href="https://docs.google.com/presentation/d/1vl4-IwZQSkzH0RMJqp-_49zW8Yzimf8e/edit?usp=sharing&ouid=107249921940021048725&rtpof=true&sd=true">Project Slides</a><br>
-            <p style="text-align:justify">Working on an automated framework to determine the optimal scan planning for a stop-and-go mapping procedure with a quadruped walking robot based on BIM</p>
+            <p style="text-align:justify">Worked on an automated framework to determine the optimal scan planning for a stop-and-go mapping procedure with a quadruped walking robot based on BIM</p>
           </td>
 
         <!-- Bird Identification-->
@@ -352,7 +345,7 @@
             </td>
 
           <!-- GAN -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <!-- <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
               <div class="one">
                 <img src='media/pix2pix.png' width="140">
@@ -363,7 +356,7 @@
               <br>
               <a href="https://github.com/kgnandanwar/GANs">GitHub Link</a>
               <p style="text-align:justify">Implemented research papers related to GANs: DCGAN, Pix2Pix, Conditional GANs & CycleGAN</p>
-            </td>
+            </td> -->
 
           <!-- Object Segmentation for Manipulation -->
           <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()" bgcolor="#DDDBDB">
@@ -489,6 +482,22 @@
               <p style="text-align:justify">F Score: SVM: 84.12%, Random Forest: 70.6%, Logistic regression: 80.95%</p>
             </td>
 
+            <!-- Decentralized Control Strategy for 8-DoF Quadruped Robot-->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
+              <div class="one">
+                <img src='media/crawler.png' width="140">
+              </div>
+            </td>
+            <td style="padding:10px 10px 10px 0px;width:80%;vertical-align:top">
+              <papertitle>Decentralized Control Strategy for 8-DoF Quadruped Robot</papertitle>
+              <br>
+              <a href="https://github.com/kgnandanwar/CreepyCrawler-Quadruped-Robot">GitHub Link</a>
+              <p style="text-align:justify">CImplemented a decentralized control system for individual legs of the quadruped based on a hybrid zero dynamics-based model to show the working of different gaits</p>
+              <p style="text-align:justify">Deployed a robust sliding mode control algorithm to control 8-DoF quadruped on a Gazebo platform via ROS</p>
+            </td>
+
+
             <!-- FWD and IK of Manipulators -->
           <!-- <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
@@ -599,45 +608,6 @@
             <br>
           </td>
 
-          <!-- HRI ID
-<tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-  <td style="padding:0px;width:25%;vertical-align:top; padding-top: 10px; padding-bottom: 10px;">
-    <div class="one">
-      <img src='media/id1.png' width="160" >
-    </div>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:top">
-    <papertitle>SYSTEM & METHOD FOR COMPLETING THREE DIMENSIONAL FACE RECONSTRUCTION</papertitle>
-    <br>
-    <strong>Kunal Nandanwar</strong>, 
-    <a href="https://www.linkedin.com/in/hifza-javed/">Hifza Javed</a>,  
-    <a href="https://www.linkedin.com/in/nawidj/">Nawid Jamali</a>
-    <br>
-    <em>(Submitted; with USPTO)</em>
-    <br>
-  </td>
-</tr> -->
-
-
-        
-        
-        <!-- John Deere ID
-        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-          <td style="padding:20px;width:25%;vertical-align:top">
-            <div class="one">
-              <img src='media/id.png' width="160" >
-            </div>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:top">
-            <papertitle>Auto Cleaning Feature for Radiator</papertitle>
-            <br>
-            <strong>Kunal Nandanwar</strong>,  
-             Anubha Pant
-            <br>
-            <em>Patent draft submitted: Aug 06, 2020. (Under review with John Deere IP team)</em>
-            <br>
-          </td> -->
-
         </tbody></table>
 
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -655,7 +625,7 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-        <!-- IAARC-->
+        <!-- CCC-->
         <tr onmouseout="malle_stop(); nerfbake_stop()" onmouseover="malle_start(); nerfbake_start()">
           <td style="padding:10px 0px 10px 10px;width:20%;vertical-align:top">
             <div class="one">
@@ -668,7 +638,7 @@
             <strong>Kunal Nandanwar</strong>, 
             <a href="https://ccee.sdsu.edu/people/reza-akhavian">Prof. Reza Akhavian</a>
             <br>
-            <em>Paper submitted at <a href="https://www.iaarc.org/symposia"> 41st International Symposium on Automation and Robotics in Construction </a></em>
+            <em>Paper submitted at <a href="https://www.iaarc.org/symposia"> Creative Construction Conference 2024 </a></em>
             <br>
             <p style="text-align:justify">Presented a novel approach to optimize scan planning in 3D indoor spaces using a Building Information Modeling (BIM)-based autonomous scan planning framework 
               with a quadruped walking robot</p>
@@ -872,7 +842,7 @@
               <p style="text-align:right;font-size:10px;"> Page visitor counter:
                 <a href="https://www.hitwebcounter.com" target="_blank"></a>
                   <img src="https://hitwebcounter.com/counter/counter.php?page=8078126&style=0007&nbdigits=4&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a></p>
-              <p  style="text-align:right;font-size:10px;">Last updated: Nov 21, 2023</p>
+              <p  style="text-align:right;font-size:10px;">Last updated: Apr 21, 2025</p>
               <p style="text-align:right;font-size:8px;">
                 <a href="https://jonbarron.info/">Template Credits</a></p>
             </td>
